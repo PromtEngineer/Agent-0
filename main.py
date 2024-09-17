@@ -10,6 +10,11 @@ from utils.result_formatter import format_results
 
 import google.generativeai as genai
 
+# Ensure logs directory exists
+logs_dir = os.path.join(os.path.dirname(__file__), 'logs')
+if not os.path.exists(logs_dir):
+    os.makedirs(logs_dir)
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
