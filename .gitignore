@@ -41,3 +41,4 @@ logs/*.log
 
 # Log files
 *.log
+.aider*
